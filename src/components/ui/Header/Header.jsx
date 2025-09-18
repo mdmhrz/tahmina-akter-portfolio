@@ -14,7 +14,7 @@ const navLinks = [
 
 export default function Header() {
     return (
-        <header className="max-w-7xl fixed left-0 right-0 top-4 z-50 mx-auto bg-background backdrop-blur-md rounded-full shadow-lg transition-all duration-300">
+        <header className="container fixed left-0 right-0 top-4 z-50 mx-auto bg-background backdrop-blur-md rounded-full shadow-lg transition-all duration-300">
             <nav className="flex items-center justify-between p-2">
                 {/* Left Side: Logo */}
                 <div className="flex items-center gap-2 text-xl font-bold ml-2">

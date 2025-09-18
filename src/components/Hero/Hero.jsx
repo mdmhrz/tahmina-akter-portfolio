@@ -9,7 +9,7 @@ import Link from 'next/link';
 const SocialMediaHero = () => {
     return (
         <div className="">
-            <div className="container px-6 py-25">
+            <div className="container mx-auto px-6 py-25">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
 
                     {/* Left Content */}

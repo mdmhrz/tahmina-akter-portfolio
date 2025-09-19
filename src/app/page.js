@@ -1,4 +1,6 @@
 import AboutMe from "@/components/AboutMe/AboutMe";
+import EducationCourses from "@/components/EducationCourses/EducationCourses";
+import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Skills from "@/components/Skills/Skills";
 import Header from "@/components/ui/Header/Header";
@@ -13,7 +15,9 @@ export default function Home() {
         <Hero></Hero>
         <AboutMe></AboutMe>
         <Skills></Skills>
+        <EducationCourses></EducationCourses>
         <WorkingProcess></WorkingProcess>
+        <Footer></Footer>
       </div>
     </div>
   );

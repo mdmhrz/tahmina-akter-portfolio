@@ -11,6 +11,7 @@ import {
     Twitter,
     Github
 } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -38,9 +39,12 @@ const Footer = () => {
                     {/* Brand Section */}
                     <div className="space-y-4">
                         <div>
-                            <h3 className="text-xl font-bold text-background">
-                                Tahmina Akter
-                            </h3>
+                            <div className='flex items-center gap-3'>
+                                <Image src={'/logo.png'} width={20} height={20} alt='logo'></Image>
+                                <h3 className="text-xl font-bold text-background">
+                                    Tahmina Akter
+                                </h3>
+                            </div>
                             <p className="text-muted-foreground text-sm leading-relaxed">
                                 Passionate Social Media Marketer with 5+ years of experience.<br />
                                 Helping brands grow through strategic digital campaigns.
@@ -55,7 +59,7 @@ const Footer = () => {
                                     <Link
                                         key={index}
                                         href={social.href}
-                                        className="inline-flex items-center justify-center w-9 h-9 bg-muted rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
+                                        className="inline-flex text-primary bg-primary/10 items-center justify-center w-9 h-9 rounded-lg hover:text-primary hover:bg-primary/10 transition-all duration-200"
                                         aria-label={social.name}
                                     >
                                         <Icon className="w-4 h-4" />
